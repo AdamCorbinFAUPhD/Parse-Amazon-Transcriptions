@@ -16,7 +16,10 @@ mediasite to stream & playback their lectures. At some point in time they disabl
 so I will go into how to download the lectures even if they are disabled.
 1. When the mediasite services is loaded into chrome, right click and open up the "inspect"
 2. Go to the Network tab
-3. Filter on mp4 ![](/images/mp4_filter.PNG)
+3. Filter on mp4 
+
+![](/images/mp4_filter.PNG)
+
 4. Press the play  
 5. Look for "Fragments(video=0,format=isoff)"
 
