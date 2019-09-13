@@ -42,5 +42,7 @@ in the Amazon transcribe service. You will need VLC player
 5. Click Browse to pick the filename and destination where you want to save the file
 6. Click Start
 
-
+# TODO
+1. Add steps to upload mp3 to Amazon S3
+2. Add steps to set up Amazon Transcribe service
 
