@@ -18,7 +18,7 @@ so I will go into how to download the lectures even if they are disabled.
 2. Go to the Network tab
 3. Filter on mp4 ![][./images/mp4_filter.PNG]
 4. Press the play  
-5. Look for "Fragments(video=0,format=isoff)" ![][./images/network_tab.PNG]
+5. Look for "Fragments(video=0,format=isoff)" ![network_tab][images/network_tab.PNG]
 6. Right click -> Copy -> Copy Link address
 7. It will be a long link but you want trim off the same part at the end of the url "Fragments(video=i,format=isoff)"
 8. With this link you can then go to the standard player. Depending on your University capture sometimes there is a slide video
