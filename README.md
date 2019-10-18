@@ -42,7 +42,27 @@ in the Amazon transcribe service. You will need VLC player
 5. Click Browse to pick the filename and destination where you want to save the file
 6. Click Start
 
-# TODO
-1. Add steps to upload mp3 to Amazon S3
-2. Add steps to set up Amazon Transcribe service
+# Uploading mp3 to Amazon S3
+1. Go to [https://s3.console.aws.amazon.com](https://s3.console.aws.amazon.com)
+2. Watch the video here to create a Bucket and upload the file. You only need to create a bucket 1 time [Uploading mp3 to Amazon S3](https://youtu.be/1ZDbvHZKgiU)
+3. Once the video has been uploaded, copy that direct link to that file. It will be used in the Amazon Transcribe
+
+# Running Amazon Transcribe
+1. Go to AWS Console: [https://console.aws.amazon.com/console](https://console.aws.amazon.com/console)
+2. Find Amazon Transcribe
+3. Click on Create Job
+4. Add in the job name(I think it needs to be unique)
+5. In the Imput Data section add in your S3 link to you mp3 file from step 3 in Uploading mp3 to Amazon S3
+6. Hit Create. This job will now kick off and transcribe your mp3 file. It can take about 30min for a full 2:30 lecture.
+
+# Creating nice output with timestamps
+Once the Amazon Transcribe job finishes you can download the json output but its really hard for a human to parse it. 
+I also wanted to get timestamps so I could go back and watch the important parts. This is where the python script comes into play.
+1. On the completed job, you can click the Download full transcript button to save the output.
+2. In the python file you can update the input_file_name to this new file and the output_file_name to what you want. That should be it.
+
+# Improvments
+If you look at the output you can see some lines dont have timestamps. Thats becuase the script looks for unique words within the line and when there is a unique name its really easy to get the timestamp. 
+If there are no unique names then it just puts blank brackets. I found that this would good enough but it could be improved upon if someone wanted full timestamps.
+
 
